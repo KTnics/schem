@@ -1,0 +1,49 @@
+{
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "id": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 15
+        },
+        "govid": {
+          "type": "number"
+        },
+        "cell": {
+          "type": "integer",
+          "maxLength":10
+          
+          
+        
+          
+        },
+        "phone": {
+          "type": "integer",
+          "maxLength":10
+          
+          
+        },
+        "birthday": {
+          "type": "string",
+          "format": "date-time"
+          
+          
+          
+        },
+        "day": {
+          "type": "string",
+          "enum": ["su", "mo", "tu","we","th","fr","sa"]
+        }
+      },
+      "required": ["name", "id","cell","govid"],
+      "additionalProperties": true
+    }
+  }
+  
